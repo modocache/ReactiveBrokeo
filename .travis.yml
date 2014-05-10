@@ -1,0 +1,3 @@
+language: objective-c
+install: echo "install overridden to prevent 'pod install'"
+script: xcodebuild -workspace ReactiveBrokeo.xcworkspace -scheme ReactiveBrokeo clean build
