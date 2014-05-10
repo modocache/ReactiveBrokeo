@@ -14,6 +14,7 @@ int main(int argc, const char * argv[]) {
         // Casting block as (id) sidesteps type error.
         // https://github.com/ReactiveCocoa/ReactiveCocoa/issues/937#issuecomment-42732343
         NSLog(@"Am I indecisive? Well, %@ and %@.", yes, no);
+        return RACTuplePack(@YES, @NO);
     }];
 
     [signal subscribeNext:^(id _) {}];
